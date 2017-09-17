@@ -1,0 +1,20 @@
+{
+	"name": "JumpNext",
+	"version": "0.1.0",
+	"description": "Move to next page of a Search Egnine with keyboard shortcut",
+	"author": "Abdulla PI <hereabdulla@gmail.com>",
+	"homepage_url": "https://github.com/hereabdulla/jumpnext",
+	"manifest_version": 2,
+	"permissions": [
+		"",
+		""
+	],
+	"content_scripts": [{
+		"matches": ["*://*.google.com/*", "*://*.google.co.in/*", "*://bing.com/*", "*://yahoo.com/*"],
+		"js": ["scripts/stackoverflow/inject.js"],
+		"run_at": "document_end"
+	}],
+	"icons": {
+		"144": "images/icon.png"
+	}
+}
